@@ -1,0 +1,186 @@
+{
+    "Cryptos_top": [
+      {
+        "id": 1,
+        "name": "pariatur",
+        "amount": 6903.32,
+        "percentage": 21.52,
+        "background": "3b15fa",
+        "transparency": 0.78
+      },
+      {
+        "id": 2,
+        "name": "irure",
+        "amount": -12700.87,
+        "percentage": 21.85,
+        "background": "3b15fa",
+        "transparency": 0.94
+      },
+      {
+        "id": 3,
+        "name": "laboris",
+        "amount": 19305.23,
+        "percentage": -11.3,
+        "background": "0a2035",
+        "transparency": 0.09
+      },
+      {
+        "id": 4,
+        "name": "eiusmod",
+        "amount": 5851.68,
+        "percentage": 12.76,
+        "background": "d53420",
+        "transparency": 0.48
+      },
+      {
+        "id": 5,
+        "name": "excepteur",
+        "amount": 4401.44,
+        "percentage": 4.15,
+        "background": "d53420",
+        "transparency": 0.21
+      }
+    ],
+    "Tokens_top": [
+      {
+        "id": 1,
+        "name": "pariatur",
+        "amount": -10652.34,
+        "percentage": 2.33,
+        "background": "d2d41a",
+        "transparency": 0.35
+      },
+      {
+        "id": 2,
+        "name": "magna",
+        "amount": -5189.23,
+        "percentage": -13.3,
+        "background": "f8c650",
+        "transparency": 0.8
+      },
+      {
+        "id": 3,
+        "name": "eiusmod",
+        "amount": -1877.31,
+        "percentage": -0.92,
+        "background": "34b3bf",
+        "transparency": 0.42
+      },
+      {
+        "id": 4,
+        "name": "laboris",
+        "amount": 19240.37,
+        "percentage": 22.97,
+        "background": "f9cbbe",
+        "transparency": 0.92
+      },
+      {
+        "id": 5,
+        "name": "proident",
+        "amount": -7014.39,
+        "percentage": 12.87,
+        "background": "b9b9b4",
+        "transparency": 0.14
+      }
+    ],
+    "Cryptos": [
+      {
+        "id": 1,
+        "name": "sit",
+        "amount": -10161.62,
+        "percentage": -15.75,
+        "background": "3b15fa",
+        "transparency": 0.76
+      },
+      {
+        "id": 2,
+        "name": "sunt",
+        "amount": -13991.85,
+        "percentage": 19.23,
+        "background": "f8c650",
+        "transparency": 0.01
+      },
+      {
+        "id": 3,
+        "name": "anim",
+        "amount": -7591.92,
+        "percentage": 21.29,
+        "background": "74563f",
+        "transparency": 0.17
+      },
+      {
+        "id": 4,
+        "name": "consequat",
+        "amount": 11654.34,
+        "percentage": 13.16,
+        "background": "1f8c21",
+        "transparency": 0.15
+      },
+      {
+        "id": 5,
+        "name": "qui",
+        "amount": 12322.85,
+        "percentage": 5.08,
+        "background": "d2d41a",
+        "transparency": 0.25
+      },
+      {
+        "id": 6,
+        "name": "dolore",
+        "amount": -14952.65,
+        "percentage": 28.42,
+        "background": "523ee9",
+        "transparency": 0.77
+      }
+    ],
+    "Tokens": [
+      {
+        "id": 1,
+        "name": "Lorem",
+        "amount": -19670.63,
+        "percentage": 8.96,
+        "background": "1f8c21",
+        "transparency": 0.81
+      },
+      {
+        "id": 2,
+        "name": "irure",
+        "amount": 15467.47,
+        "percentage": 23.15,
+        "background": "34b3bf",
+        "transparency": 0.99
+      },
+      {
+        "id": 3,
+        "name": "et",
+        "amount": -9272.01,
+        "percentage": -11.07,
+        "background": "b3258e",
+        "transparency": 0.98
+      },
+      {
+        "id": 4,
+        "name": "voluptate",
+        "amount": 6768.68,
+        "percentage": 2.17,
+        "background": "1818a5",
+        "transparency": 0.77
+      },
+      {
+        "id": 5,
+        "name": "laborum",
+        "amount": 3323.9,
+        "percentage": -0.13,
+        "background": "a75daf",
+        "transparency": 0.48
+      },
+      {
+        "id": 6,
+        "name": "ad",
+        "amount": 18029.39,
+        "percentage": 17.5,
+        "background": "9fbe98",
+        "transparency": 0.9
+      }
+    ]
+  }
