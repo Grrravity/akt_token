@@ -2,7 +2,7 @@
     package="com.example.akt_token">
    <application
         android:label="akt_token"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
