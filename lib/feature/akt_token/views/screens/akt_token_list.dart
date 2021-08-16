@@ -1,5 +1,8 @@
 import 'package:akt_token/feature/akt_token/domain/entities/crypto_entity.dart';
+import 'package:akt_token/feature/akt_token/views/components/display/item_list_display.dart';
 import 'package:flutter/material.dart';
+
+import '../components/display/token_list_export.dart';
 
 class AktTokenList extends StatefulWidget {
   final CryptoEntity cryptoEntity;
@@ -11,8 +14,8 @@ class AktTokenList extends StatefulWidget {
 
 class _AktTokenListState extends State<AktTokenList> {
   late ScrollController _scrollController;
-  double _promotionOpacity = 1;
-  bool _promotionDisplayed = true;
+  double _salesOpacity = 1;
+  bool _salesDisplayed = true;
 
   @override
   void initState() {
@@ -20,13 +23,13 @@ class _AktTokenListState extends State<AktTokenList> {
     _scrollController = ScrollController()
       ..addListener(() {
         setState(() {
-          _promotionOpacity = _flexibleSpaceBarRelativeSize;
-          _promotionDisplayed = _isPromotionInvisible ? false : true;
+          _salesOpacity = _flexibleSpaceBarRelativeSize;
+          _salesDisplayed = _isSalesInvisible ? false : true;
         });
       });
   }
 
-  bool get _isPromotionInvisible {
+  bool get _isSalesInvisible {
     return _scrollController.hasClients &&
         _scrollController.offset > (250 - kToolbarHeight);
   }
@@ -52,54 +55,16 @@ class _AktTokenListState extends State<AktTokenList> {
           expandedHeight: 350,
           pinned: true,
           stretch: true,
-          snap: false,
-          floating: false,
           backgroundColor: Colors.black,
           flexibleSpace: FlexibleSpaceBar(
             centerTitle: true,
+            //remove the widgets when not displayed to avoid overflow
             title: Visibility(
-              visible: _promotionDisplayed,
+              visible: _salesDisplayed,
+              //Custom fade-ou / fade-in transition according to flexibleSpaceBar height
               child: Opacity(
-                opacity: _promotionOpacity,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text("AKT Token", style: TextStyle(fontFamily: "SSN-Bold")),
-                    Opacity(
-                      opacity: 0.75,
-                      child: Center(
-                        child: Text(
-                          "Purchase our exclusive token with 25% bonus\r\n& get your lifetime Elite membership now",
-                          style: TextStyle(
-                            fontSize: 9,
-                            fontFamily: "SSN-Medium",
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 10),
-                      width: 110,
-                      height: 25,
-                      child: ElevatedButton(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              "Learn more",
-                              style: TextStyle(
-                                  fontSize: 9, fontFamily: "SSN-Medium"),
-                            ),
-                            Icon(Icons.arrow_right_alt_rounded),
-                          ],
-                        ),
-                        onPressed: () => print("ok"),
-                      ),
-                    ),
-                  ],
-                ),
+                opacity: _salesOpacity,
+                child: SalesContent(),
               ),
             ),
             background: Image.asset(
@@ -107,52 +72,30 @@ class _AktTokenListState extends State<AktTokenList> {
               fit: BoxFit.fitWidth,
               alignment: Alignment.topCenter,
             ),
-            stretchModes: [StretchMode.zoomBackground],
           ),
         ),
         SliverList(
-          delegate: SliverChildBuilderDelegate(
-            (_, int index) {
-              return ListTile(
-                leading: Container(
-                    padding: EdgeInsets.all(8),
-                    width: 100,
-                    child: Placeholder()),
-                title: Text(
-                  'Place ${index + 1}',
-                  textScaleFactor: 2,
-                  style: TextStyle(color: Colors.white),
+            delegate: SliverChildBuilderDelegate(
+          (_, int index) {
+            return Column(
+              children: [
+                ItemListDisplay(
+                  data: index == 0
+                      ? widget.cryptoEntity.cryptosTop
+                      : widget.cryptoEntity.cryptos,
+                  title: "Cryptos",
                 ),
-              );
-            },
-            childCount: 20,
-          ),
-        ),
+                ItemListDisplay(
+                    data: index == 0
+                        ? widget.cryptoEntity.tokensTop
+                        : widget.cryptoEntity.tokens,
+                    title: "Tokens"),
+              ],
+            );
+          },
+          childCount: 2,
+        )),
       ],
     );
-  }
-}
-
-class PromotionalPersistentHeaderDelegate
-    extends SliverPersistentHeaderDelegate {
-  @override
-  Widget build(
-      BuildContext context, double shrinkOffset, bool overlapsContent) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
-
-  @override
-  // TODO: implement maxExtent
-  double get maxExtent => throw UnimplementedError();
-
-  @override
-  // TODO: implement minExtent
-  double get minExtent => throw UnimplementedError();
-
-  @override
-  bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) {
-    // TODO: implement shouldRebuild
-    throw UnimplementedError();
   }
 }

@@ -12,6 +12,8 @@ class CreatingView extends AktTokenState {}
 
 class Loading extends AktTokenState {}
 
+class Fetching extends AktTokenState {}
+
 class Loaded extends AktTokenState {
   final CryptoEntity data;
 

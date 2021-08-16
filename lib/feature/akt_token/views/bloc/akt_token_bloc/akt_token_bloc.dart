@@ -30,6 +30,12 @@ class AktTokenBloc extends Bloc<AktTokenEvent, AktTokenState> {
       final failureOrData = await getCryptoData(NoParams());
       yield* _eitherLoadedOrErrorState(failureOrData);
     }
+    if (event is SalesPressed) {
+      //TODO Implement background process for sales
+    }
+    if (event is ItemPressed) {
+      //TODO Implement background process for sales
+    }
   }
 
   Stream<AktTokenState> _eitherLoadedOrErrorState(

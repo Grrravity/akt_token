@@ -9,8 +9,6 @@ abstract class AktTokenEvent extends Equatable {
 
 class ViewCreation extends AktTokenEvent {}
 
-class PromotionPressed extends AktTokenEvent {}
+class SalesPressed extends AktTokenEvent {}
 
-class TokenPressed extends AktTokenEvent {}
-
-class CryptoPressed extends AktTokenEvent {}
+class ItemPressed extends AktTokenEvent {}

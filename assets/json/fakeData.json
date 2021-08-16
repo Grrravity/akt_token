@@ -1,186 +1,194 @@
 {
-    "cryptos_top": [
-      {
-        "id": 1,
-        "name": "pariatur",
-        "amount": 6903.32,
-        "percentage": 21.52,
-        "background": "3b15fa",
-        "transparency": 0.78
-      },
-      {
-        "id": 2,
-        "name": "irure",
-        "amount": -12700.87,
-        "percentage": 21.85,
-        "background": "3b15fa",
-        "transparency": 0.94
-      },
-      {
-        "id": 3,
-        "name": "laboris",
-        "amount": 19305.23,
-        "percentage": -11.3,
-        "background": "0a2035",
-        "transparency": 0.09
-      },
-      {
-        "id": 4,
-        "name": "eiusmod",
-        "amount": 5851.68,
-        "percentage": 12.76,
-        "background": "d53420",
-        "transparency": 0.48
-      },
-      {
-        "id": 5,
-        "name": "excepteur",
-        "amount": 4401.44,
-        "percentage": 4.15,
-        "background": "d53420",
-        "transparency": 0.21
-      }
-    ],
-    "tokens_top": [
-      {
-        "id": 1,
-        "name": "pariatur",
-        "amount": -10652.34,
-        "percentage": 2.33,
-        "background": "d2d41a",
-        "transparency": 0.35
-      },
-      {
-        "id": 2,
-        "name": "magna",
-        "amount": -5189.23,
-        "percentage": -13.3,
-        "background": "f8c650",
-        "transparency": 0.8
-      },
-      {
-        "id": 3,
-        "name": "eiusmod",
-        "amount": -1877.31,
-        "percentage": -0.92,
-        "background": "34b3bf",
-        "transparency": 0.42
-      },
-      {
-        "id": 4,
-        "name": "laboris",
-        "amount": 19240.37,
-        "percentage": 22.97,
-        "background": "f9cbbe",
-        "transparency": 0.92
-      },
-      {
-        "id": 5,
-        "name": "proident",
-        "amount": -7014.39,
-        "percentage": 12.87,
-        "background": "b9b9b4",
-        "transparency": 0.14
-      }
-    ],
-    "cryptos": [
-      {
-        "id": 1,
-        "name": "sit",
-        "amount": -10161.62,
-        "percentage": -15.75,
-        "background": "3b15fa",
-        "transparency": 0.76
-      },
-      {
-        "id": 2,
-        "name": "sunt",
-        "amount": -13991.85,
-        "percentage": 19.23,
-        "background": "f8c650",
-        "transparency": 0.01
-      },
-      {
-        "id": 3,
-        "name": "anim",
-        "amount": -7591.92,
-        "percentage": 21.29,
-        "background": "74563f",
-        "transparency": 0.17
-      },
-      {
-        "id": 4,
-        "name": "consequat",
-        "amount": 11654.34,
-        "percentage": 13.16,
-        "background": "1f8c21",
-        "transparency": 0.15
-      },
-      {
-        "id": 5,
-        "name": "qui",
-        "amount": 12322.85,
-        "percentage": 5.08,
-        "background": "d2d41a",
-        "transparency": 0.25
-      },
-      {
-        "id": 6,
-        "name": "dolore",
-        "amount": -14952.65,
-        "percentage": 28.42,
-        "background": "523ee9",
-        "transparency": 0.77
-      }
-    ],
-    "tokens": [
-      {
-        "id": 1,
-        "name": "Lorem",
-        "amount": -19670.63,
-        "percentage": 8.96,
-        "background": "1f8c21",
-        "transparency": 0.81
-      },
-      {
-        "id": 2,
-        "name": "irure",
-        "amount": 15467.47,
-        "percentage": 23.15,
-        "background": "34b3bf",
-        "transparency": 0.99
-      },
-      {
-        "id": 3,
-        "name": "et",
-        "amount": -9272.01,
-        "percentage": -11.07,
-        "background": "b3258e",
-        "transparency": 0.98
-      },
-      {
-        "id": 4,
-        "name": "voluptate",
-        "amount": 6768.68,
-        "percentage": 2.17,
-        "background": "1818a5",
-        "transparency": 0.77
-      },
-      {
-        "id": 5,
-        "name": "laborum",
-        "amount": 3323.9,
-        "percentage": -0.13,
-        "background": "a75daf",
-        "transparency": 0.48
-      },
-      {
-        "id": 6,
-        "name": "ad",
-        "amount": 18029.39,
-        "percentage": 17.5,
-        "background": "9fbe98",
-        "transparency": 0.9
-      }
-    ]
-  }
+  "cryptos_top": [
+    {
+      "id": 1,
+      "name": "eu",
+      "amount": 7163.19,
+      "percentage": -4.61,
+      "background": "a75daf",
+      "transparency": 0.19
+    },
+    {
+      "id": 2,
+      "name": "irure",
+      "amount": -15715.72,
+      "percentage": 1.55,
+      "background": "f8c650",
+      "transparency": 0.28
+    },
+    {
+      "id": 3,
+      "name": "nulla",
+      "amount": -2441.12,
+      "percentage": -14.89,
+      "background": "04fd37",
+      "transparency": 0.23
+    },
+    {
+      "id": 4,
+      "name": "pariatur",
+      "amount": 5198.38,
+      "percentage": -8.98,
+      "background": "0a2035",
+      "transparency": 0.01
+    },
+    {
+      "id": 5,
+      "name": "proident",
+      "amount": 11250.99,
+      "percentage": 10.71,
+      "background": "8c4623",
+      "transparency": 0.2
+    }
+  ],
+  "tokens_top": [
+    {
+      "id": 1,
+      "name": "sint",
+      "amount": 3015.47,
+      "percentage": 19.68,
+      "background": "9fbe98",
+      "transparency": 0.04
+    },
+    {
+      "id": 2,
+      "name": "qui",
+      "amount": -2559.9,
+      "percentage": 22.95,
+      "background": "74563f",
+      "transparency": 0.28
+    },
+    {
+      "id": 3,
+      "name": "eiusmod",
+      "amount": 9738.13,
+      "percentage": 11.34,
+      "background": "b3258e",
+      "transparency": 0.17
+    },
+    {
+      "id": 4,
+      "name": "officia",
+      "amount": -1687.02,
+      "percentage": -8.84,
+      "background": "40095b",
+      "transparency": 0.15
+    },
+    {
+      "id": 5,
+      "name": "aute",
+      "amount": -17654.76,
+      "percentage": -5.62,
+      "background": "04fd37",
+      "transparency": 0.27
+    },
+    {
+      "id": 6,
+      "name": "excepteur",
+      "amount": 2469.09,
+      "percentage": -10.53,
+      "background": "8c4623",
+      "transparency": 0.37
+    }
+  ],
+  "cryptos": [
+    {
+      "id": 1,
+      "name": "Lorem",
+      "amount": 3682.24,
+      "percentage": 28.78,
+      "background": "9fbe98",
+      "transparency": 0.01
+    },
+    {
+      "id": 2,
+      "name": "excepteur",
+      "amount": 10349.44,
+      "percentage": -17.13,
+      "background": "d53420",
+      "transparency": 0.1
+    },
+    {
+      "id": 3,
+      "name": "aliquip",
+      "amount": 3638.87,
+      "percentage": -16.03,
+      "background": "f4370f",
+      "transparency": 0.36
+    },
+    {
+      "id": 4,
+      "name": "nisi",
+      "amount": 5519.69,
+      "percentage": 26.53,
+      "background": "1818a5",
+      "transparency": 0.23
+    },
+    {
+      "id": 5,
+      "name": "ad",
+      "amount": -19538.79,
+      "percentage": -3.43,
+      "background": "523ee9",
+      "transparency": 0.22
+    }
+  ],
+  "tokens": [
+    {
+      "id": 1,
+      "name": "ex",
+      "amount": -17067.23,
+      "percentage": -6.93,
+      "background": "523ee9",
+      "transparency": 0.38
+    },
+    {
+      "id": 2,
+      "name": "voluptate",
+      "amount": 9183.78,
+      "percentage": -2.25,
+      "background": "b3258e",
+      "transparency": 0.08
+    },
+    {
+      "id": 3,
+      "name": "occaecat",
+      "amount": -19896.36,
+      "percentage": -3.63,
+      "background": "74563f",
+      "transparency": 0.36
+    },
+    {
+      "id": 4,
+      "name": "irure",
+      "amount": -17812.01,
+      "percentage": -15.99,
+      "background": "f4370f",
+      "transparency": 0.3
+    },
+    {
+      "id": 5,
+      "name": "reprehenderit",
+      "amount": -4002.62,
+      "percentage": -15.97,
+      "background": "8c4623",
+      "transparency": 0.46
+    },
+    {
+      "id": 6,
+      "name": "cupidatat",
+      "amount": -9351.03,
+      "percentage": 26.39,
+      "background": "d53420",
+      "transparency": 0.14
+    },
+    {
+      "id": 7,
+      "name": "et",
+      "amount": -15827.14,
+      "percentage": 18.9,
+      "background": "d53420",
+      "transparency": 0.13
+    }
+  ]
+}
