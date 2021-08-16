@@ -55,7 +55,7 @@ class _InvestItemState extends State<InvestItem> {
                       TextStyle(fontFamily: "SSN-Medium", color: Colors.white),
                 ),
                 Text(
-                  "${widget.data.percentage > 0 ? "+" : "-"} ${widget.data.percentage}%",
+                  "${widget.data.percentage > 0 ? "+" : ""} ${widget.data.percentage}%",
                   style: TextStyle(
                       fontFamily: "SSN-Medium",
                       color: widget.data.percentage > 0
