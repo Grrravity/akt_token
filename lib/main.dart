@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'feature/akt_token/views/components/screens/akt_landing.dart';
+import 'feature/akt_token/views/screens/akt_landing_view.dart';
 import 'injection_container.dart' as inj;
 
 void main() async {
@@ -18,6 +18,10 @@ class AktApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: Scaffold(body: AktLanding()));
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          body: AktLanding(),
+          backgroundColor: Colors.black,
+        ));
   }
 }
