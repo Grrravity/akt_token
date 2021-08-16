@@ -14,6 +14,9 @@ class FakeApiDataSourceImpl implements FakeApiDataSource {
   Future<Crypto> getCryptoData() =>
       _getCryptoDataFromJsonFile("assets/json/fakeData.json");
 
+  /// Try to load data from the json
+  /// added a delay of 2 seconds to display loading
+  /// @return [Crypto] or [AssetException]
   Future<Crypto> _getCryptoDataFromJsonFile(String asset) async {
     var jsonString = await rootBundle.loadString(asset);
     await Future.delayed(Duration(seconds: 2));
