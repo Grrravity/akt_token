@@ -1,5 +1,5 @@
 {
-    "Cryptos_top": [
+    "cryptos_top": [
       {
         "id": 1,
         "name": "pariatur",
@@ -41,7 +41,7 @@
         "transparency": 0.21
       }
     ],
-    "Tokens_top": [
+    "tokens_top": [
       {
         "id": 1,
         "name": "pariatur",
@@ -83,7 +83,7 @@
         "transparency": 0.14
       }
     ],
-    "Cryptos": [
+    "cryptos": [
       {
         "id": 1,
         "name": "sit",
@@ -133,7 +133,7 @@
         "transparency": 0.77
       }
     ],
-    "Tokens": [
+    "tokens": [
       {
         "id": 1,
         "name": "Lorem",

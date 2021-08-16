@@ -47,6 +47,8 @@ flutter:
   assets:
     - assets/png/background.png
     - assets/png/logo_akt.png
+    - assets/png/size_error.png
+    - assets/json/fakeData.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

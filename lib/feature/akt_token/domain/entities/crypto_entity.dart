@@ -2,10 +2,10 @@ import 'package:akt_token/feature/akt_token/data/model/data_model.dart';
 import 'package:equatable/equatable.dart';
 
 class CryptoEntity extends Equatable {
-  final Data cryptosTop;
-  final Data tokensTop;
-  final Data cryptos;
-  final Data tokens;
+  final List<Data> cryptosTop;
+  final List<Data> tokensTop;
+  final List<Data> cryptos;
+  final List<Data> tokens;
 
   CryptoEntity(
       {required this.cryptosTop,

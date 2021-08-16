@@ -1,5 +1,7 @@
 import 'package:akt_token/feature/akt_token/domain/entities/crypto_entity.dart';
 
+import 'data_model.dart';
+
 class Crypto extends CryptoEntity {
   Crypto(
       {required cryptosTop,
@@ -14,24 +16,24 @@ class Crypto extends CryptoEntity {
 
   factory Crypto.fromJson(Map<String, dynamic> json) {
     return Crypto(
-        cryptosTop: json['cryptosTop'] != null
-            ? new Crypto.fromJson(json['cryptosTop'])
+        cryptosTop: json['cryptos_top'] != null
+            ? List<Data>.from(json['cryptos_top'].map((x) => Data.fromJson(x)))
             : null,
-        tokensTop: json['tokensTop'] != null
-            ? new Crypto.fromJson(json['tokensTop'])
+        tokensTop: json['tokens_top'] != null
+            ? List<Data>.from(json['tokens_top'].map((x) => Data.fromJson(x)))
             : null,
         cryptos: json['cryptos'] != null
-            ? new Crypto.fromJson(json['cryptos'])
+            ? List<Data>.from(json['cryptos'].map((x) => Data.fromJson(x)))
             : null,
         tokens: json['tokens'] != null
-            ? new Crypto.fromJson(json['tokens'])
+            ? List<Data>.from(json['tokens'].map((x) => Data.fromJson(x)))
             : null);
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'cryptosTop': cryptosTop,
-      'tokensTop': tokensTop,
+      'cryptos_top': cryptosTop,
+      'tokens_top': tokensTop,
       'cryptos': cryptos,
       'tokens': tokens,
     };
