@@ -7,11 +7,11 @@
 
 AktToken is a flutter project to show how great it is to build cross plateforme apps.
 
-## Architechture
+## Architecture
 This project use ResoCoder's **[Clean Architecture](https://resocoder.com/2019/08/27/flutter-tdd-clean-architecture-course-1-explanation-project-structure/)**
 The goal of this architecture is to make it easier for large-scale project to add or modify features as they work independantly and are easy to inject into the project.
 
-###In this project:
+### In this project:
 
 -> Core folder contains global utility class or functions like
 
@@ -23,6 +23,7 @@ The goal of this architecture is to make it easier for large-scale project to ad
   
   Theming...
   
+  
 -> Features/Data contains related files to handle data from a source
 
   Models convert raw json to a dart model
@@ -30,6 +31,7 @@ The goal of this architecture is to make it easier for large-scale project to ad
   Implementation of source (repository)
   
   Source
+  
   
 -> Features/domain contains related files to link data source with business logic
 
@@ -39,6 +41,7 @@ The goal of this architecture is to make it easier for large-scale project to ad
   
   Usecases (to simplify testing and implementation)
   
+  
 -> Features/Views contains UI files as long as their respective blocs for business logic
 
   blocs (business logic)
@@ -46,6 +49,7 @@ The goal of this architecture is to make it easier for large-scale project to ad
   Components contains reusable displays (several widgets that makes a whole element) and widgets (customized widget that may be used at several places)
   
   Screens contains the actual app screens
+  
 
 | Implementations      | status |
 | :----------- | :----:  |
