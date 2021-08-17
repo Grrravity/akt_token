@@ -29,7 +29,7 @@ The goal of this architecture is to make it easier for large-scale project to ad
   - Repository 
   - Usecases (to simplify testing and implementation)
 
--> Features/Views contains UI files as long as their respective blocs for business logic
+- Features/Views contains UI files as long as their respective blocs for business logic
   - blocs (business logic)
   - Components contains reusable displays (several widgets that makes a whole element) and widgets (customized widget that may be used at several places)
   - Screens contains the actual app screens
@@ -40,6 +40,8 @@ The goal of this architecture is to make it easier for large-scale project to ad
 | iOS and Android support   | ✔️        |
 | Clean Architecture      | ✔️       |
 | Testing   | :hourglass_flowing_sand:   |
+
+![App example](https://media.giphy.com/media/icPZKL35RqEooiC0Im/giphy.gif)
 
 ## Android Installation *(require at least Flutter SDK)*
 
