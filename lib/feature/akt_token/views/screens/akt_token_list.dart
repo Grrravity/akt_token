@@ -34,6 +34,9 @@ class _AktTokenListState extends State<AktTokenList> {
         _scrollController.offset > (250 - kToolbarHeight);
   }
 
+  /// Returns the [_relativeSize] size of FlexibleSpaceBar
+  ///
+  /// returns [_relativeSize] == 1 if FlexibleSpaceBar is fully shown and 0 if fully hidden
   double get _flexibleSpaceBarRelativeSize {
     double _relativeSize = _scrollController.hasClients
         ? (350 - _scrollController.offset) / 350

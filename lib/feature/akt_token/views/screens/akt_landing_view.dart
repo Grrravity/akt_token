@@ -1,5 +1,4 @@
 import 'package:akt_token/feature/akt_token/views/bloc/akt_token_bloc/akt_token_export_bloc.dart';
-import 'package:akt_token/feature/akt_token/views/components/display/size_error_display.dart';
 import 'package:akt_token/feature/akt_token/views/components/widget/loading_widget.dart';
 import 'package:akt_token/feature/akt_token/views/screens/akt_token_list.dart';
 import 'package:flutter/foundation.dart';
@@ -22,19 +21,9 @@ class AktLanding extends StatelessWidget {
               if (state is Loading) {
                 return LoadingWidget();
               } else if (state is Loaded) {
-                if (kIsWeb &&
-                    (MediaQuery.of(context).size.width < 311 ||
-                        MediaQuery.of(context).size.height < 500)) {
-                  return SizeError();
-                } else {
-                  if (kIsWeb)
-                    return AspectRatio(
-                        aspectRatio: 4 / 3,
-                        child: AktTokenList(cryptoEntity: state.data));
-                  else
-                    return AktTokenList(cryptoEntity: state.data);
-                }
+                return AktTokenList(cryptoEntity: state.data);
               } else {
+                //Add view creation event to fetch data before displaying the view
                 BlocProvider.of<AktTokenBloc>(context).add(ViewCreation());
                 return LoadingWidget();
               }

@@ -27,14 +27,16 @@ class AktTokenBloc extends Bloc<AktTokenEvent, AktTokenState> {
   ) async* {
     if (event is ViewCreation) {
       yield Loading();
+      // Get data from source
       final failureOrData = await getCryptoData(NoParams());
+      // yield either a falure or the actual data's state
       yield* _eitherLoadedOrErrorState(failureOrData);
     }
     if (event is SalesPressed) {
       //TODO Implement background process for sales
     }
     if (event is ItemPressed) {
-      //TODO Implement background process for sales
+      //TODO Implement background process for invest items
     }
   }
 

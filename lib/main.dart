@@ -6,8 +6,10 @@ import 'injection_container.dart' as inj;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  //Initialisation of injections fot the whole app
   await inj.init();
 
+  //Force app's orientation to Portrait Up
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((value) => runApp(AktApp()));
 }

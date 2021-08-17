@@ -24,11 +24,22 @@ class CryptoDataRepositoryImpl implements CryptoDataRepository {
   /// Getting data from the fake datasource (json file)
   /// @return [Crypto] or [LocalFailure]
   Future<Either<Failure, CryptoEntity>> _getCryptoData() async {
-    try {
-      final cryptoData = await fakeApiDataSource.getCryptoData();
-      return Right(cryptoData);
-    } on AssetException {
-      return Left(LocalFailure());
+    //Check connectivity and load ressources from api or cache
+    //TODO add remote and local source
+    if (await networkInfo.isConnected) {
+      try {
+        final cryptoData = await fakeApiDataSource.getCryptoData();
+        return Right(cryptoData);
+      } on AssetException {
+        return Left(ServerFailure());
+      }
+    } else {
+      try {
+        final cryptoData = await fakeApiDataSource.getCryptoData();
+        return Right(cryptoData);
+      } on AssetException {
+        return Left(LocalFailure());
+      }
     }
   }
 }
