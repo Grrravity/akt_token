@@ -38,8 +38,8 @@ The goal of this architecture is to make it easier for large-scale project to ad
 | Implementations      | status |
 | :----------- | :----:  |
 | iOS and Android support   | ✔️        |
-| Web support   | ✔️        |
 | Clean Architecture      | ✔️       |
+| Testing   | :hourglass_flowing_sand:   |
 
 ## Android Installation *(require at least Flutter SDK)*
 
@@ -81,24 +81,6 @@ flutter build ios
 3. Now in Xcode, open Runner.xcworkspace in your akt_token app's ios folder
 
 4. Select your device in the list next to the runner and press Run icon
-
-
-## Web Installation *(require at least Flutter SDK and Chrome)*
-
-1. Open in a terminal the targeted folder you wish to clone the project to in a terminal
-
-```bash
-git clone https://github.com/Grrravity/akt_token.git
-```
-
-2. Get into the folder then build the web app
-
-```bash
-cd akt_token
-flutter run -d chrome
-```
-
-This will open a localhost of this app in your chrome browser.
 
 ## APK Installation
 * Check that your phone accept unknown source apk
