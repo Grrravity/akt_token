@@ -13,42 +13,26 @@ The goal of this architecture is to make it easier for large-scale project to ad
 
 ### In this project:
 
--> Core folder contains global utility class or functions like
+- Core folder contains global utility class or functions like
+  - Checking internet connection
+  - Handeling errors & exceptions
+  - Usecases (to simplify testing and implementation)
+  - Theming...
 
-  Checking internet connection
-  
-  Handeling errors & exceptions
-  
-  Usecases (to simplify testing and implementation)
-  
-  Theming...
-  
-  
--> Features/Data contains related files to handle data from a source
+- Features/Data contains related files to handle data from a source
+  - Models convert raw json to a dart model
+  - Implementation of source (repository)
+  - Source
 
-  Models convert raw json to a dart model
-  
-  Implementation of source (repository)
-  
-  Source
-  
-  
--> Features/domain contains related files to link data source with business logic
+- Features/domain contains related files to link data source with business logic
+  - Entities are the data models
+  - Repository 
+  - Usecases (to simplify testing and implementation)
 
-  Entities are the data models
-  
-  Repository 
-  
-  Usecases (to simplify testing and implementation)
-  
-  
 -> Features/Views contains UI files as long as their respective blocs for business logic
-
-  blocs (business logic)
-  
-  Components contains reusable displays (several widgets that makes a whole element) and widgets (customized widget that may be used at several places)
-  
-  Screens contains the actual app screens
+  - blocs (business logic)
+  - Components contains reusable displays (several widgets that makes a whole element) and widgets (customized widget that may be used at several places)
+  - Screens contains the actual app screens
   
 
 | Implementations      | status |
