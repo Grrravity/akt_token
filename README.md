@@ -87,7 +87,7 @@ flutter build ios
 ## APK Installation
 * Check that your phone accept unknown source apk
 
-1. Download the apk from TODO
+1. Download the apk from **[Release](https://github.com/Grrravity/akt_token/releases/tag/1.0.0%2B1)**
 
 2. Paste the apk in your Android's storage
 
