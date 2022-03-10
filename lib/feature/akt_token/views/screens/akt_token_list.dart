@@ -30,7 +30,7 @@ class _AktTokenListState extends State<AktTokenList> {
   }
 
   bool get _isSalesInvisible {
-    print('Fonction pour voir les investissements');
+    print('Fonction pour voir l\'investissement');
     return _scrollController.hasClients &&
         _scrollController.offset > (250 - kToolbarHeight);
   }
