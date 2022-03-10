@@ -52,7 +52,7 @@ class _AktTokenListState extends State<AktTokenList> {
         SliverAppBar(
           title: Center(
               child: Text(
-            "Investments",
+            "Actionnariat",
             style: TextStyle(fontSize: 14),
           )),
           expandedHeight: 350,
@@ -86,13 +86,13 @@ class _AktTokenListState extends State<AktTokenList> {
                   data: index == 0
                       ? widget.cryptoEntity.cryptosTop
                       : widget.cryptoEntity.cryptos,
-                  title: "Cryptos",
+                  title: "Actions",
                 ),
                 ItemListDisplay(
                     data: index == 0
                         ? widget.cryptoEntity.tokensTop
                         : widget.cryptoEntity.tokens,
-                    title: "Tokens"),
+                    title: "Stock options"),
               ],
             );
           },
