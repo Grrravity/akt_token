@@ -30,6 +30,7 @@ class _AktTokenListState extends State<AktTokenList> {
   }
 
   bool get _isSalesInvisible {
+    print('test');
     return _scrollController.hasClients &&
         _scrollController.offset > (250 - kToolbarHeight);
   }
